@@ -1,0 +1,126 @@
+:root {
+    /*========== Colors ==========*/
+/* Color mode HSL(hue, saturation, lightness) */
+--first-color: hsl(19, 67%, 52%);
+--first-color-dark: hsl(27, 73%, 47%) ;
+--first-color-light: hsl(24, 63%, 53%);
+--title-color: hsl(0, 0%, 87%);
+--text-color: hsl(0, 0%, 69%);
+--body-color: hsl(200, 12% , 5% );
+--container-color: hsl(30, 10%, 8%);
+--border-color: hsl(0, 0%, 20%);
+--white: #fff;
+--blanco: #ffffff;
+--oscuro: #212121;
+--primario: #FFC107;
+--secundario: #0097A7;
+--gris: #757575;
+--grisClaro: #DFE9F3;
+--orange: #f39708;
+--azulOscuro: #180560;
+--claro: #efd2be;
+--hueso: #f8f6f5;
+--dark-orange: #ff6e00;
+--orange-claro: #febd69;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+    background-color: var(--hueso);
+}
+header .title {
+    color: var(--blanco);
+}
+
+nav {
+    padding: 32px 32px;
+    min-height: 80px;
+    background-color: var(--body-color);
+    position: sticky;
+    top: 0;
+}
+
+nav a{
+    vertical-align: middle;
+}
+nav  img{
+    max-height: 48px;
+    background-color: var(--title-color);
+}
+
+nav ul,
+nav li,
+.space {
+    display: inline-block;
+}
+
+.space {
+    width: calc(100% - 132px - 276px);
+}
+nav ul {
+    margin-bottom: 15px;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+#last-item {
+    margin-right: 0;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    color: var(--title-color);
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+    color: var(--first-color);
+}
+
+nav ul li a:active {
+    color: var(--dark-orange);
+}
+
+#current-page {
+    color: var(--secundario);
+} /*end nav and archos*/
+/*Container float home*/
+.content-float{
+    background-color: var(--claro);
+    margin-top: 10px;
+    margin-left: 40px;
+    width: 95%;
+    height: 100%;
+}
+.container-float {
+    padding: 20px;
+}
+
+.float-left {
+    float: left;
+    padding-right: 10px;
+}
+
+.float-right {
+    float: right;
+    padding-left: 10px;
+}
+
+.title-float{
+    font-size: 30px;
+    padding-bottom: 15px;
+    font-weight: bold;
+    
+}
+
+.des-float {
+    font-size: 15px;
+}

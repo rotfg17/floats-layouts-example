@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Navigation Elements</title>
+</head>
+<body>
+    <nav  aria-label="First navegation">
+        <a href="#">
+            <picture>
+                <!-- SVG version for all scenarios due to scalability and efficiency -->
+                <source srcset="../assets/img/ECO_logo.svg" type="image/svg+xml" />
+                <!-- High resolution PNG for large screens -->
+                <source srcset="../assets/img/ECO_logo_big.png" media="(min-width: 1024px)" type="image/png" />
+                <!-- Small PNG for medium screens -->
+                <source srcset="../assets/img/ECO_logo_small.png" media="(min-width: 768px)" type="image/png" />
+                <!-- High resolution JPG for small screens (lower priority than PNG) -->
+                <source srcset="../assets/img/ECO_logo_big.jpg" media="(min-width: 480px)" type="image/jpg" />
+                <!-- Fallback small JPG for all other scenarios or if none of the above are supported -->
+                <img src="../assets/img/ECO_logo_small.jpg" alt="ECO company logo">
+            </picture>
+
+            <span class="space"></span>
+        </a>
+            <ul>
+                <li><a href="../index.html"  >Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li id="last-item"><a href="#" id="current-page">Contact</a></li>
+                <li></li>
+            </ul>
+    </nav>
+
+    <header>
+    <h1 class="title">My Webpage</h1>
+
+    </header>
+
+</body>
+</html>
